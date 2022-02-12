@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(20, 20, 20);
+    color: rgb(231, 231, 231);
+}
+
+@keyframes typing{
+    from{ width: 0; }
+  }
+
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+button{
+    width:700px;
+    height: 40px;
+    margin-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 20px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
+/*눌렀을 때*/
+button:focus{
+    outline: 0;
+}
+
+/*마우스를 올렸을 때*/
+button:hover{
+    background-color: rgb(216, 215, 215);
+    color: rgb(72, 96, 202);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
+
+.player{
+    width: 10%;
+}
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ #K_fonts{
+ font-family: "KyoboHand";
+ }
+
+ @font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#D_fonts{
+    font-family: "DungGeunMo";
+    }
+
+.story{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.box{
+    margin: 0 auto;
+    line-height: 100%;
+    width : 850px;
+    border: 2px solid #f1f1f1;
+    margin-bottom: 40px;
+}
