@@ -1,6 +1,12 @@
 body{
     background-color: rgb(20, 20, 20);
     color: rgb(231, 231, 231);
+    /* 드래그방지 */
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 @keyframes typing{
@@ -14,7 +20,7 @@ p {
 }
 
 button{
-    width:700px;
+    width:500px;
     height: 40px;
     margin-bottom: 8px;
     background-color: rgb(255, 255, 255);
@@ -29,6 +35,17 @@ button{
     font-family: 'DungGeunMo';
 }
 
+input[type="text"], textarea {
+    height: 40px;
+    font-size: 20px;
+    font-family: 'KyoboHand';
+    background-color : #383838; 
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: rgb(103, 207, 255);
+  }
+
 /*눌렀을 때*/
 button:focus{
     outline: 0;
@@ -41,6 +58,34 @@ button:hover{
     /*마우스 누름 버튼모양으로*/
     cursor: pointer;
 }
+
+#endingmo{
+    width:200px;
+    height: 40px;
+    margin-bottom: 8px;
+    background-color: rgb(255, 213, 213);
+    color: rgb(31, 31, 31);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 20px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
+#endingmo:focus{
+    outline: 0;
+}
+
+#endingmo:hover{
+    background-color: rgb(211, 150, 150);
+    color: rgb(55, 65, 109);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
+
 
 .player{
     width: 10%;
@@ -69,7 +114,7 @@ button:hover{
     }
 
 .story{
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
 }
 
