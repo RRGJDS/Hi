@@ -75,7 +75,27 @@ button:hover{
     font-family: 'DungGeunMo';
 }
 
+#audioP{
+    width:280px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-color: rgb(213, 255, 255);
+    color: rgb(31, 31, 31);
+    /* x축 y축 블러값 */
+    font-size: 16px;
+    /*모서리 둥글게*/
+    border-radius: 5px;
+    border: none;
+    /*부드럽게 변환*/
+    transition: 0.3s;
+    font-family: 'DungGeunMo';
+}
+
 #endingmo:focus{
+    outline: 0;
+}
+
+#audioP:focus{
     outline: 0;
 }
 
@@ -86,6 +106,12 @@ button:hover{
     cursor: pointer;
 }
 
+#audioP:hover{
+    background-color: rgb(141, 190, 190);
+    color: rgb(24, 31, 63);
+    /*마우스 누름 버튼모양으로*/
+    cursor: pointer;
+}
 
 .player{
     width: 10%;
