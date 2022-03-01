@@ -15,4 +15,5 @@ document.querySelector("#audioP").addEventListener("click", function(){
     happy.play();
     happy.loop = true;
     happy.volume = 0.2;
+    happy.currentTime = 0;
 });
