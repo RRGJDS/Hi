@@ -4,7 +4,24 @@
         <meta charset="UTF-8">
         <title>위대한 용사의 모험기</title>
         <link rel="stylesheet" href="gaboga.css">
-        <script>src="JJ.js"</script>
+        <script type="text/javascript"> src="JJ.js"</script>
+        <script type="text/javascript">
+            var frmUrl = location.href;
+            var Cut = frmUrl.indexOf("?");
+            var Cutlas = frmUrl.lastIndexOf("?");
+            var Check = frmUrl.substring(Cut+1); 
+            var varList = Check.split("&"); 
+            forCount = varList.length; 
+            var test = new Array();
+            for(i=0; i < forCount; i++)  
+             {
+                eval(varList[i]); 
+             }
+             if(suSee=1){
+                    alert(suSee);
+                    btnOff();
+                }
+</script>
     </head>
     <body>
         <div id="D_fonts">
@@ -12,10 +29,19 @@
                 <img src="img/지도.png" alt="골목길" width=26%>
                 <br><br>
                 <p class="box"><br>
+                    사람들이 잘 다니지 않는 골목길이라 그런지 한산하다.<br><br>
+                    골목길 벽에 오래된 듯한 종이가 붙어있다.<br><br>
+                    ···길 건너편에서 작은 소리가 들린다.<br><br>
                 </p>
-                <button type="button" onClick="location.href='B5.html'">돌아가자.</button>
-                <button id="su" type="button" onClick="location.href='B2_1.html'">수상한 전단지가 붙어있다. 살펴볼까?.</button>
-                <button type="button" onClick="location.href='B3.html'">계속해서 나아가자.</button>
+                <button type="button" onClick="location.href='B5.html'">돌아가자.</button><br>
+                <button id='su' type="button" onClick="
+                var suSee;
+                alert('2');
+                location.href='B2_1.html';
+                
+                this.disabled = true;
+                ">종이를 살펴볼까?</button><br>
+                <button type="button" onClick="location.href='B3.html'">소리의 정체를 확인해보자.</button><br>
             </div>
         </div>
     </body>
