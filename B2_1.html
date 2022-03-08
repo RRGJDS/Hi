@@ -31,6 +31,15 @@
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
         </script>
+        <script>
+            function setCookie(key, value, expiredays) {
+                let todayDate = new Date();
+                todayDate.setDate(todayDate.getDate() + expiredays); // 현재 시각 + 일 단위로 쿠키 만료 날짜 변경
+                //todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000)); // 밀리세컨드 단위로 쿠키 만료 날짜 변경
+                document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+            }
+            setCookie('suspect', '50', '2');
+        </script>
     </head>
     <body>
         <div id="D_fonts">
@@ -44,7 +53,7 @@
                     □징 : 사□을 □터□□ 보며, 자□이 □□라□ □상을 하고 □습니□."<br><br>
                     ···갈수록 글자가 흐릿해져 더이상 읽을 수 없다.<br><br>
                 </p>
-                <button type="button" onClick="location.href='B2.html?suSee=1'">마저 가보자.</button>
+                <button type="button" onClick="location.href='B2.html'">마저 가보자.</button>
             </div>
         </div>
     </body>
