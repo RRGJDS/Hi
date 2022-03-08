@@ -38,22 +38,21 @@
                 //todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000)); // 밀리세컨드 단위로 쿠키 만료 날짜 변경
                 document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
             }
-            // setCookie('HJlive', '3', '2');
-            // setCookie('SKYlive', '3', '2');
-            // setCookie('pudding', '3', '2');
-            // setCookie('suspect', '3', '2');
-            // setCookie('Dio', '0', '2');
-            function delCookie(key){
-                let todayDate = new Date();
-                document.cookie = key + "=; path=/; expires=" + todayDate.toGMTString() + ";" // 현재 시각 이전이면 쿠키가 만료되어 사라짐.
-            }
+            setCookie('HJlive', '3', '2');
+            setCookie('SKYlive', '3', '2');
+            setCookie('pudding', '3', '2');
+            setCookie('suspect', '3', '2');
+            setCookie('Dio', '0', '2');
+            // function delCookie(key){
+            //     let todayDate = new Date();
+            //     document.cookie = key + "=; path=/; expires=" + todayDate.toGMTString() + ";" // 현재 시각 이전이면 쿠키가 만료되어 사라짐.
+            // }
 
-            delCookie(HJlive);
-            delCookie(SKYlive);
-            delCookie(pudding);
-            delCookie(suspect);
-            delCookie(Dio);
-
+            // delCookie(HJlive);
+            // delCookie(SKYlive);
+            // delCookie(pudding);
+            // delCookie(suspect);
+            // delCookie(Dio);
         </script>
     </head>
     <body>
