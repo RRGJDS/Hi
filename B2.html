@@ -45,9 +45,10 @@
                 <button type="button" onClick="location.href='B5.html'">돌아가자.</button><br>
                 <button id='su' type="button" onClick="
                 var Su = function getCookie(suspect){
-                    suspect = new RegExp(suspect + '=([^;]*)'); // 쿠키들을 세미콘론으로 구분하는 정규표현식 정의
-                    return suspect.test(document.cookie) ? unescape(RegExp.$1) : ''; // 인자로 받은 키에 해당하는 키가 있으면 값을 반환
+                    suspect = new RegExp(suspect + '=([^;]*)');
+                    return suspect.test(document.cookie) ? unescape(RegExp.$1) : '';
                 }
+                console.log(Su);
                 if(Su=='3'){
                     location.href='B2_1.html'
                 }
