@@ -48,6 +48,15 @@
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
         </script>
+        <script>
+            function setCookie(key, value, expiredays) {
+                let todayDate = new Date();
+                todayDate.setDate(todayDate.getDate() + expiredays); // 현재 시각 + 일 단위로 쿠키 만료 날짜 변경
+                //todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000)); // 밀리세컨드 단위로 쿠키 만료 날짜 변경
+                document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+            }
+            setCookie('suspect', '50', '2');
+        </script>
     </head>
     <body>
         <div id="D_fonts">
@@ -61,11 +70,16 @@
                 </p>
                 <button type="button" onClick="location.href='B5.html'">돌아가자.</button><br>
                 <button id='su' type="button" onClick="
-                var suSee;
-                alert('2');
-                location.href='B2_1.html';
-                
-                this.disabled = true;
+                var Su = function getCookie(suspect){
+                    suspect = new RegExp(suspect + '=([^;]*)'); // 쿠키들을 세미콘론으로 구분하는 정규표현식 정의
+                    return suspect.test(document.cookie) ? unescape(RegExp.$1) : ''; // 인자로 받은 키에 해당하는 키가 있으면 값을 반환
+                }
+                if(Su==3){
+                    location.href='B2_1.html'
+                }
+                else{
+                    alert('이미 확인했다. 사실 실험용 ㅋㅋㄹㅃㅃ')
+                }
                 ">종이를 살펴볼까?</button><br>
                 <button type="button" onClick="location.href='B3.html'">소리의 정체를 확인해보자.</button><br>
             </div>
