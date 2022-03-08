@@ -6,23 +6,6 @@
         <link rel="stylesheet" href="gaboga.css">
         <script type="text/javascript"> src="JJ.js"</script>
         <script type="text/javascript">
-            var frmUrl = location.href;
-            var Cut = frmUrl.indexOf("?");
-            var Cutlas = frmUrl.lastIndexOf("?");
-            var Check = frmUrl.substring(Cut+1); 
-            var varList = Check.split("&"); 
-            forCount = varList.length; 
-            var test = new Array();
-            for(i=0; i < forCount; i++)  
-             {
-                eval(varList[i]); 
-             }
-             if(suSee=1){
-                    alert(suSee);
-                    btnOff();
-                }
-        </script>
-        <script type="text/javascript">
             var kdC = 0;
             var kdS = 0;
 
@@ -65,7 +48,7 @@
                     suspect = new RegExp(suspect + '=([^;]*)'); // 쿠키들을 세미콘론으로 구분하는 정규표현식 정의
                     return suspect.test(document.cookie) ? unescape(RegExp.$1) : ''; // 인자로 받은 키에 해당하는 키가 있으면 값을 반환
                 }
-                if(Su==3){
+                if(Su=='3'){
                     location.href='B2_1.html'
                 }
                 else{
