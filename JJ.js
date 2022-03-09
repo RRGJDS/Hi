@@ -26,7 +26,6 @@ function reset(){
   setCookie('pudding', '3', '2');
   setCookie('suspect', '3', '2');
   setCookie('Dio', '0', '2');
-  setCookie('a', '1', '1');
 }
 
 
