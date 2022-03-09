@@ -20,6 +20,8 @@ function getCookie(key){
   key = new RegExp(key + '=([^;]*)');
   return key.test(document.cookie) ? unescape(RegExp.$1) : '';}
 
+var Su = getCookie(suspect);
+
 function reset(){  
   setCookie('HJlive', '3', '2');
   setCookie('SKYlive', '3', '2');
