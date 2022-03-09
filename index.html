@@ -32,17 +32,18 @@
                 document.onmousedown=click;
         </script> -->
         <script>
-            function setCookie(key, value, expiredays) {
-                let todayDate = new Date();
-                todayDate.setDate(todayDate.getDate() + expiredays); // 현재 시각 + 일 단위로 쿠키 만료 날짜 변경
-                //todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000)); // 밀리세컨드 단위로 쿠키 만료 날짜 변경
-                document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
-            }
-            setCookie('HJlive', '3', '2');
-            setCookie('SKYlive', '3', '2');
-            setCookie('pudding', '3', '2');
-            setCookie('suspect', '3', '2');
-            setCookie('Dio', '0', '2');
+            reset();
+            // function setCookie(key, value, expiredays) {
+            //     let todayDate = new Date();
+            //     todayDate.setDate(todayDate.getDate() + expiredays); // 현재 시각 + 일 단위로 쿠키 만료 날짜 변경
+            //     //todayDate.setTime(todayDate.getTime() + (expiredays * 24 * 60 * 60 * 1000)); // 밀리세컨드 단위로 쿠키 만료 날짜 변경
+            //     document.cookie = key + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+            // }
+            // setCookie('HJlive', '3', '2');
+            // setCookie('SKYlive', '3', '2');
+            // setCookie('pudding', '3', '2');
+            // setCookie('suspect', '3', '2');
+            // setCookie('Dio', '0', '2');
             // function delCookie(key){
             //     let todayDate = new Date();
             //     document.cookie = key + "=; path=/; expires=" + todayDate.toGMTString() + ";" // 현재 시각 이전이면 쿠키가 만료되어 사라짐.
@@ -63,7 +64,7 @@
                 <!-- <img src="img/1-1.png" alt="예시" width=30%> -->
                 <h1 style="color: rgb(218, 95, 95); margin-top: 100px;">※주의사항※</h1>
                 <p style="color: rgb(218, 95, 95); margin-bottom: 50px;">
-                    해당 게임에는 미약한 <span style="background-color: blanchedalmond;";> 공포, 심리적 압박, 유혈</span> 등의 요소가 포함되어 있습니다.<br><br>
+                    aa해당 게임에는 미약한 <span style="background-color: blanchedalmond;";> 공포, 심리적 압박, 유혈</span> 등의 요소가 포함되어 있습니다.<br><br>
                     시작하시기 전<br>
                     <span style="background-color: blanchedalmond;">"크롬->설정->보안 및 개인정보 보호->사이트 설정
                     ->(맨 밑)추가 콘텐츠 설정->소리->소리 재생이 허용됨 추가 버튼->사이트 링크 추가"</span><br>
