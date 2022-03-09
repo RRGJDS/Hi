@@ -44,10 +44,10 @@
                 </p>
                 <button type="button" onClick="location.href='B5.html'">돌아가자.</button><br>
                 <button id='su' type="button" onClick="
-                var Su = function getCookie(suspect){
-                    suspect = new RegExp(suspect + '=([^;]*)');
-                    return suspect.test(document.cookie) ? unescape(RegExp.$1) : '';
-                }
+                function getCookie(key){
+                    key = new RegExp(key + '=([^;]*)');
+                    return key.test(document.cookie) ? unescape(RegExp.$1) : '';}
+                var Su = getCookie(suspect)
                 console.log(Su);
                 if(Su=='3'){
                     location.href='B2_1.html'
