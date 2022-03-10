@@ -48,13 +48,13 @@
                     key = new RegExp(key + '=([^;]*)');
                     return key.test(document.cookie) ? unescape(RegExp.$1) : '';}*/
                 document.getElementById('su').innerHTML=Su;
-                console.log(Su+'Su~');
-                console.log(su+'su~');
-                if(Su=='3'){
+                console.log(Su);
+                console.log(su);
+                if(su=='3'){
                     location.href='B2_1.html'
                 }
                 else{
-                    alert(Su)
+                    alert(su)
                 }
                 ">종이를 살펴볼까?</button><br>
                 <button type="button" onClick="location.href='B3.html'">소리의 정체를 확인해보자.</button><br>
