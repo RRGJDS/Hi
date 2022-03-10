@@ -65,9 +65,17 @@ function reset(){
 
 function HapE(){
   var happy = new Audio("audio/happy ending.mp3");
+  happy.currentTime = DioV();
   happy.autoplay = true;
   happy.loop = true;
   happy.volume = 0.2;
+  happy.play();
+}
+
+function HappyT(){
+  var sethappy = happy.currentTime;
+  console.log(sethappy);
+  setCookie('Dio', sethappy, '2');
 }
 
 function NorE(){
