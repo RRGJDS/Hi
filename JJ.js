@@ -63,7 +63,24 @@ function reset(){
   setCookie('Dio', '0', '2');
 }
 
+function HapE(){
+  var happy = new Audio("audio/happy ending.mp3");
+  happy.autoplay = true;
+  happy.loop = true;
+  happy.volume = 0.2;
+}
 
+function NorE(){
+  var normal = new Audio("audio/Normal ending.mp3");
+}
+
+function Tru(){
+  var truth = new Audio("audio/truth.mp3");
+}
+
+function Batt(){
+  var battle = new Audio("audio/battle.mp3");
+}
 // var happy = new Audio("audio/happy ending.mp3");
 // var normal = new Audio("audio/Normal ending.mp3");
 // var truth = new Audio("audio/truth.mp3");
