@@ -47,4 +47,4 @@ function reset(){
 //     happy.currentTime = 0;
 // });
 
-console.log("tlqkf");
+console.log("TLQKF");
