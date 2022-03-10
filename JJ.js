@@ -22,16 +22,17 @@ function getCookie(key){
   return key.test(document.cookie) ? unescape(RegExp.$1) : '';}
 
 function SuV(){
-  getCookie(suspect);
+  getCookie('suspect');
+  var su = getCookie("suspect");
+  console.log("쿠키 suspect변수에 저장된 값: "+su);
+  return su;
 }
-
-var suspect;
 
 function reset(){  
   setCookie('HJlive', '3', '2');
   setCookie('SKYlive', '3', '2');
   setCookie('pudding', '3', '2');
-  setCookie(suspect, '3', '2');
+  setCookie('suspect', '3', '2');
   setCookie('Dio', '0', '2');
 }
 
@@ -48,4 +49,4 @@ function reset(){
 //     happy.currentTime = 0;
 // });
 
-console.log("TLQKF");
+console.log("11TLQKF");
