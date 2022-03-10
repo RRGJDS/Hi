@@ -73,9 +73,9 @@ function HapE(){
 }
 
 function HappyT(){
-  var sethappy = happy.currentTime;
-  console.log(sethappy);
-  setCookie('Dio', sethappy, '2');
+  // var sethappy = happy.currentTime
+  console.log(happy.currentTime);
+  setCookie('Dio', happy.currentTime, '2');
 }
 
 function NorE(){
