@@ -21,16 +21,14 @@ function getCookie(key){
   key = new RegExp(key + '=([^;]*)');
   return key.test(document.cookie) ? unescape(RegExp.$1) : '';}
 
-function SuV(){
-  var Su = getCookie('suspect');
-}
+var Su = getCookie('suspect');
 
 
 function reset(){  
   setCookie('HJlive', '3', '2');
   setCookie('SKYlive', '3', '2');
   setCookie('pudding', '3', '2');
-  setCookie(suspect, '3', '2');
+  setCookie('suspect', '3', '2');
   setCookie('Dio', '0', '2');
 }
 
