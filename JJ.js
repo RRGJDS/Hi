@@ -60,7 +60,7 @@ function reset(){
   setCookie('SKYlive', '3', '2');
   setCookie('pudding', '3', '2');
   setCookie('suspect', '3', '2');
-  setCookie('Dio', '10', '2');
+  setCookie('Dio', '0', '2');
 }
 
 var happy = new Audio("audio/happy ending.mp3");
