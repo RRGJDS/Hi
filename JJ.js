@@ -24,8 +24,35 @@ function getCookie(key){
 function SuV(){
   getCookie('suspect');
   var su = getCookie("suspect");
-  console.log("쿠키 suspect변수에 저장된 값: "+su);
   return su;
+}
+
+function HJD(){
+  getCookie('HJlive');
+  var hj = getCookie("HJlive");
+  return hj;
+}
+//화주를 만남 : 10
+//화주 푸딩 : 20
+//화주 퇴장 : 30
+//화주 죽음 : 44
+
+function SKYD(){
+  getCookie('SKYlive');
+  var sky = getCookie("SKYlive");
+  return sky;
+}
+
+function PuV(){
+  getCookie('pudding');
+  var pud = getCookie("pudding");
+  return pud;
+}
+
+function DioV(){
+  getCookie('Dio');
+  var dio = getCookie("Dio");
+  return dio;
 }
 
 function reset(){  
@@ -49,4 +76,4 @@ function reset(){
 //     happy.currentTime = 0;
 // });
 
-console.log("11TLQKF");
+console.log("22TLQKF");
