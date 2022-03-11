@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
+            HapE();
             var kdC = 0;
             var kdS = 0;
 
@@ -44,22 +45,33 @@
                 </p>
                 <script>
                     var su1 = SuV();
+                    var hj1 = HJD();
                 </script>
-                <button type="button" onClick="location.href='B5.html'">돌아가자.</button><br>
                 <button type="button" onClick="
-                /*function getCookie(key){
-                    key = new RegExp(key + '=([^;]*)');
-                    return key.test(document.cookie) ? unescape(RegExp.$1) : '';}*/
-                console.log(su1);
+                HappyT();
+                location.href='B5.html'">돌아가자.</button><br>
+                
+                <button type="button" onClick="
                 if(su1=='3'){
+                    HappyT();
                     location.href='B2_1.html'
                 }
                 else{
                     alert('···다시 보고싶지 않아.')
                 }
                 ">종이를 살펴볼까?</button><br>
-                <button type="button" onClick="location.href='B3.html'">소리의 정체를 확인해보자.</button><br>
-            </div>
+                <button type="button" onClick="
+                if(hj1 =='3'){
+                    HappyT();
+                    location.href='B3.html'
+                }
+                else if(hj1=='44'){
+                    alert('밑과 같은데 핏자국 묘사 추가')
+                }
+                else{
+                    alert('hj없다는 대사')
+                }">소리의 정체를 확인해보자.</button><br>
+            </div>//푸딩변수, 하늘이변수로 크게 묶어야
         </div>
     </body>
 </html>
