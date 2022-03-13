@@ -33,18 +33,16 @@
                 document.onmousedown=click;
         </script> -->
         <script>
-            if(S=3){
-                HapE();
+            var Q1 = inAudio();
+            if(Q1==3){
+                reset();
             }
             else{
-                reset();}
+                HapE();
+            }
         </script>
     </head>
     <body>
-        <!-- <script>
-            var dio1=DioV();
-            HapE();
-        </script> -->
         <div id="D_fonts">
             <div style="text-align: center;">
                 <h1 style="font-size: 50px;"><br>~ 위대한 용사의 모험기 ~</h1>
@@ -64,7 +62,9 @@
                 HappyT();
                 location.href='A1.html'
                 ">모험을 시작하자.</button><br><br><br>
-                <button id="endingmo" type="button" onClick="location.href='A0.html'">엔딩 비하인드</button>
+                <button id="endingmo" type="button" onClick="
+                HappyT();
+                location.href='A0.html'">엔딩 비하인드</button>
             </div>
         </div>
     </body>

@@ -61,6 +61,7 @@ function reset(){
   setCookie('pudding', '3', '2');
   setCookie('suspect', '3', '2');
   setCookie('Dio', '0', '2');
+  setCookie('QQQ', '3', '2');
 }
 
 var happy = new Audio("audio/happy ending.mp3");
@@ -77,6 +78,12 @@ function HappyT(){
   // var sethappy = happy.currentTime
   console.log(happy.currentTime);
   setCookie('Dio', happy.currentTime, '2');
+}
+
+function inAudio(){
+  getCookie('QQQ');
+  var QQQ = getCookie("QQQ");
+  return QQQ;
 }
 
 function NorE(){
