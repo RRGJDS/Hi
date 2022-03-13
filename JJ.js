@@ -32,9 +32,8 @@ function HJD(){
   var hj = getCookie("HJlive");
   return hj;
 }
-//화주를 만남 : 10
+//화주를 만남(노이벤) : 10
 //화주 푸딩 : 20
-//화주 퇴장 : 30
 //화주 죽음 : 44
 
 function SKYD(){
