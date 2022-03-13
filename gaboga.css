@@ -75,16 +75,16 @@ button:hover{
     font-family: 'DungGeunMo';
 }
 
-#audioP{
+#tnlt{
     width:280px;
     height: 20px;
     margin-bottom: 8px;
-    background-color: rgb(213, 255, 255);
-    color: rgb(31, 31, 31);
+    background-color: rgb(0, 0, 0);
+    color: rgb(48, 48, 48);
     /* x축 y축 블러값 */
     font-size: 16px;
     /*모서리 둥글게*/
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
     /*부드럽게 변환*/
     transition: 0.3s;

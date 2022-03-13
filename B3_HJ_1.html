@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
-            HapE();
+            Batt();
             var kdC = 0;
             var kdS = 0;
 
@@ -31,24 +31,37 @@
             function click() {
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
+
+            setCookie('HJlive', '10', '2');
+            var PUU = PuV();
         </script>
     </head>
     <body>
         <div id="D_fonts">
             <div class="story">
-                <img src="img/두갈래길.png" alt="두갈래길" width=26%>
+                <img src="img/화주_전단지.png" alt="푸딩가게 전단지이다." width=26%>
                 <br><br>
                 <p class="box"><br>
-                    푸릇한 잔디의 향이 코 끝을 찌른다.<br><br>
-                    이곳은 안전하다는 예감이 든다.<br><br>
-                    ···조심히 걸음을 옮기자, <span style="color: rgb(103, 255, 136);">두 갈래</span>의 길이 나타났다. 어디로 갈까?<br><br>
+                    슬라임 앞에 있던 종이를 바라보니, 꾸물거리며 전단지를 보여주었다.<br><br>
+                    "선착순 100명 한정 특제 푸딩!"이라는 제목의 전단지이다.<br><br>
+                    ···슬라임이 방심하고 있다.<br><br>
                 </p>
                 <button type="button" onClick="
-                HappyT();
-                location.href='B1.html'">달큰한 냄새가 나는 오른쪽 길로.</button><br>
+                BattT()
+                location.href='B3_HJD_1.html'">지금이라면 죽일 수 있을 것 같다. 공격한다.</button>
+
                 <button type="button" onClick="
-                HappyT();
-                location.href='B5.html'">사람은 직진이지.</button>
+                BattT()
+                location.href='B3_HJ_2.html'">어딘지 잘 모르겠어.</button>
+
+                <button type="button" onClick="
+                BattT()
+                if(PUU='3'){
+                    alert('지도를 가지고 있지 않아 위치를 설명해줄 수 없다.');
+                }
+                else{
+                    location.href='B3_HJ_3.html'
+                }">아! 여기라면···.</button>
             </div>
         </div>
     </body>

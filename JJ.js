@@ -32,7 +32,7 @@ function HJD(){
   var hj = getCookie("HJlive");
   return hj;
 }
-//화주를 만남(노이벤) : 10
+//화주 푸딩 실패 : 10
 //화주 푸딩 : 20
 //화주 죽음 : 44
 
@@ -74,7 +74,6 @@ function HapE(){
 }
 
 function HappyT(){
-  // var sethappy = happy.currentTime
   console.log(happy.currentTime);
   setCookie('Dio', happy.currentTime, '2');
 }
@@ -93,19 +92,19 @@ function Tru(){
   var truth = new Audio("audio/truth.mp3");
 }
 
+var battle = new Audio("audio/battle.mp3");
+
 function Batt(){
-  var battle = new Audio("audio/battle.mp3");
+  battle.currentTime = DioV();
+  battle.autoplay = true;
+  battle.loop = true;
+  battle.volume = 0.2;
+  battle.play();
 }
-// var happy = new Audio("audio/happy ending.mp3");
-// var normal = new Audio("audio/Normal ending.mp3");
-// var truth = new Audio("audio/truth.mp3");
-// var battle = new Audio("audio/battle.mp3");
 
-// document.querySelector("#audioP").addEventListener("click", function(){
-//     happy.play();
-//     happy.loop = true;
-//     happy.volume = 0.2;
-//     happy.currentTime = 0;
-// });
+function BattT(){
+  console.log(battle.currentTime);
+  setCookie('Dio', battle.currentTime, '2');
+}
 
-console.log("333TLQKF");
+console.log("44TLQKF");
