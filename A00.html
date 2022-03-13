@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>위대한 용사의 모험기</title>
+        <link rel="stylesheet" href="gaboga.css">
+        <script src="./JJ.js"></script>
+        <script type="text/javascript">
+            HapE();
+            var kdC = 0;
+            var kdS = 0;
+
+            document.onkeydown=keycheck;
+            document.onkeyup=uncheckCtrlshift;
+
+            function keycheck(){
+                switch(event.keyCode){
+                    case 123:event.keyCode='';return false; break;//F12
+
+                    case 17:event.keyCode='';kdC=1;return false; break;//컨트롤
+                }
+
+                if(kdC) return false;
+            }
+
+            function uncheckCtrlshift(){
+                if(event.keyCode==17)       kdC=0;
+                if(event.keyCode==16)       kdS=0;
+            }
+
+            function click() {
+                if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
+                document.onmousedown=click;
+        </script>
+    </head>
+    <body>
+        <div id="D_fonts">
+            <div class="story">
+                <p>
+                    <br>
+                    Song : orion - party<br><br>
+                    Follow Artist : https://bit.ly/3zmDDex<br><br>
+                    Music promoted by DayDreamSound : https://youtu.be/nBgqnCU4oKw<br><br>
+                    <br><br>
+                    ---<br><br>
+                    <br><br>
+                    Song : seoulMINA - 집에서...<br><br>
+                    Follow Artist : https://soundcloud.com/seoulmina<br><br>
+                    Music promoted by DayDreamSound : https://youtu.be/BssanPFQQqE<br><br>
+                    <br><br>
+                    ---<br><br>
+                    <br><br>
+                    Song : Have - Regretting<br><br>
+                    Follow Artist : https://bit.ly/3CqZjGK<br><br>
+                    Music promoted by DayDreamSound : https://youtu.be/1f-D7V75ucQ<br><br>
+                    <br><br>
+                    ---<br><br>
+                    <br><br>
+                    Song : HEAVYgiant - Hope You Shine<br><br>
+                    Follow Artist : https://bit.ly/33O4dy3<br><br>
+                    Music promoted by DayDreamSound : https://youtu.be/cpizyB5jJ1g<br><br>
+                </p>
+                <button type="button" onClick="
+                HappyT();
+                location.href='index.html'">돌아가기</button>
+            </div>
+        </div>
+    </body>
+</html>
