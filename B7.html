@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
-            HapE();
             var kdC = 0;
             var kdS = 0;
 
@@ -31,6 +30,9 @@
             function click() {
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
+            var M1 = MM();
+            var KK = KII();
+            var D = DD();
         </script>
     </head>
     <body>
@@ -44,12 +46,24 @@
                     지구의 구원을 끝마칠까요? 』<br><br>
                 </p>
                 <button type="button" onClick="
-                if(kill=='0'&&M=='3'){
+                if(KK=='0'&&M1=='3'){
                     alert('『 당신은 아무것도 구원하지 못했어요. 』')
                 }
-                else{
-                    HappyT();
-                    location.href='B9.html'
+                else if(KK=='50'){
+                    setCookie('Dio', '0', '2');
+                    location.href='C3.html'
+                }
+                else if(KK=='1'){
+                    setCookie('Dio', '0', '2');
+                    location.href='C1.html'
+                }
+                else if(KK=='2'){
+                    setCookie('Dio', '0', '2');
+                    location.href='C2.html'
+                }
+                else if(M1=='50'&&KK=='0'){
+                    setCookie('Dio', '0', '2');
+                    location.href='C4.html'
                 }
                 ">이제 충분해. 지구는 구원받았어.</button><br>
 
@@ -58,8 +72,18 @@
                 location.href='B8.html'">아직이야. 지구는 아직 구원받지 못했어.</button><br>
 
                 <button type="button" id="tnlt" onClick="
-                HappyT();
-                location.href='B5.html'">서랍이 있다.</button>
+                if(D=='50'){
+                    HappyT();
+                    location.href='B7_2.html'
+                }
+                else if(D=='100'){
+                    alert('더이상 볼일이 없다.')
+                }
+                else{
+                    HappyT();
+                    location.href='B7_1.html'
+                }
+                ">서랍이 있다.</button>
             </div>
         </div>
     </body>

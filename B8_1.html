@@ -30,6 +30,7 @@
             function click() {
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
+            var M1 = MM();
         </script>
     </head>
     <body>
@@ -43,7 +44,7 @@
                     전단지를 챙기면 버리기 전까지 다른 물건을 들 수 없을 것 같다.<br><br>
                 </p>
                 <button type="button" onClick="
-                if(M!=3){
+                if(M1!=3){
                     alert('더이상 물건을 들 수 없다.');
                 }
                 else{

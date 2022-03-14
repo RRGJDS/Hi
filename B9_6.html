@@ -6,8 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
-            setCookie('Dio', '0', '2');
-            Batt();
+            HapE();
             var kdC = 0;
             var kdS = 0;
 
@@ -32,39 +31,20 @@
             function click() {
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
-            var H = HJD();
         </script>
     </head>
     <body>
         <div id="D_fonts">
             <div class="story">
-                <img src="img/하늘슬라임.png" alt="푸른색의 슬라임이다." width=26%>
+                <img src="img/몰살.png" alt="붉은 것으로 가득 찼다." width=26%>
                 <br><br>
                 <p class="box"><br>
-                    서늘한 바람 사이로 옅은 바다냄새가 코 끝을 간지럽혔다.<br><br>
-                    느릿하게 눈을 깜빡이니 향의 주인인 슬라임이 보였다.<br><br>
-                    ···곧 지구를 구원할 수 있다.<br><br>
+                    내가 지구를 구해냈다는 증거다.<br><br>
+                    머릿속에 울리는 S의 칭찬소리에, 입꼬리가 비죽 올라갔다.<br><br>
                 </p>
                 <button type="button" onClick="
-                if(H=='3'||H=='10'){
-                    alert('이게 화주가 먼저 죽는 엔딩');
-                    BattT();
-                    location.href='B9_1.html'
-                }
-
-                else if(H=='44'){
-                    alert('위랑 같은데 멘트 살짝 변경');
-                    BattT();
-                    location.href='B9_2.html'
-                }
-
-                else if(H=='20'){
-                    alert('하늘이 죽음')
-                    BattT();
-                    location.href='B9_3.html'
-                }
-                ">지구를 구원하자.</button><br>
-                <button type="button" onClick="location.href='B6.html'">돌아가자.</button>
+                HappyT();
+                location.href='B6.html'">돌아가자.</button>
             </div>
         </div>
     </body>

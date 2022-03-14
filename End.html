@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
+            setCookie('Dio', '0', '2');
             HapE();
             var kdC = 0;
             var kdS = 0;
@@ -31,38 +32,24 @@
             function click() {
                 if(event.button==2||event.button==3) alert("우클릭을 금지합니다."); } 
                 document.onmousedown=click;
-            var K = KII();
         </script>
     </head>
     <body>
         <div id="D_fonts">
             <div class="story">
-                <img src="img/들판.png" alt="푸른들판" width=26%>
-                <br><br>
-                <p class="box"><br>
-                    마을의 중심지에서 멀어졌기 때문인지, 한산해졌다.<br><br>
-                    바람을 타고 흩어지는 풀내음 사이,<br><br>
-                    옅은 바다냄새가 났다.<br><br>
+                <p class="box">
+                    <br>
+                    처음으로 만들어보기도 했고, 급하게 마무리 짓느라<br><br>
+
+개연성도 부족하고, 많이 허접한데도 플레이 해주셔서 감사합니다!<br><br>
+
+엔딩은 총 4가지가 있습니다.<br><br>
+
+감사합니다!<br><br>
                 </p>
                 <button type="button" onClick="
-                if(K=='50' || K=='2'){
-                    HappyT();
-                    location.href='B9_6.html'
-                }
-
-                else if(K=='1'){
-                    HappyT();
-                    location.href='B9_7.html'
-                }
-                else if(K=='0'){
-                    HappyT();
-                    location.href='B9.html'
-                }
-                ">근처에 바다는 없었는데···. 빠르게 다가간다.</button><br>
-
-                <button type="button" onClick="
                 HappyT();
-                location.href='B5.html'">돌아가자.</button>
+                location.href='index.html'">처음으로</button>
             </div>
         </div>
     </body>
