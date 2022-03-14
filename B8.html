@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
+            HapE();
             var kdC = 0;
             var kdS = 0;
 
@@ -35,12 +36,41 @@
     <body>
         <div id="D_fonts">
             <div class="story">
-                <img src="img/길.png" alt="익숙한 왼쪽 길" width=26%>
+                <img src="img/길.png" alt="익숙한 오른쪽 길" width=26%>
                 <br><br>
                 <p class="box"><br>
+                    푸릇했던 길이 점차 황토색으로 물들기 시작했다.<br><br>
+                    분명 처음보는 길인데, 마치 수년을 걸어온 것 처럼 익숙하다.<br><br>
+                    ···다른 곳으로 가고 싶다.<br><br>
                 </p>
-                <button type="button" onClick="location.href='B1.html'">달큰한 냄새가 나는 오른쪽 길로.</button><br>
-                <button type="button" onClick="location.href='B5.html'">사람은 직진이지.</button>
+                <script>
+                    var pu2 = PuV();
+                </script>
+                <button type="button" onClick="
+                HappyT();
+                location.href='B5.html'">돌아가자.</button><br>
+
+                <button type="button" onClick="
+                HappyT();
+                location.href='B5.html'">돌아가자.</button><br>
+
+                <button type="button" onClick="
+                HappyT();
+                location.href='B5.html'">돌아가자.</button><br>
+                
+                <button type="button" onClick="
+                if(pu2=='3'){
+                    HappyT();
+                    location.href='B8_1.html'
+                }
+                else{
+                    alert('이제 벽에는 아무것도 남아있지 않아.')
+                }
+                ">벽에 전단지가 붙어있다. 살펴볼까?</button><br>
+
+                <button type="button" onClick="
+                HappyT();
+                location.href='B7.html'">···.</button><br>
             </div>
         </div>
     </body>

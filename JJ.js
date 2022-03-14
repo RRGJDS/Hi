@@ -34,7 +34,7 @@ function HJD(){
 }
 //화주 푸딩 실패 : 10
 //화주 푸딩 : 20
-//화주 죽음 : 44
+//화주 ㅌㅌ : 44
 
 function SKYD(){
   getCookie('SKYlive');
@@ -61,6 +61,8 @@ function reset(){
   setCookie('suspect', '3', '2');
   setCookie('Dio', '0', '2');
   setCookie('QQQ', '3', '2');
+  setCookie('M', '3', '2'); //약
+  setCookie('kill', '3', '2');
 }
 
 var happy = new Audio("audio/happy ending.mp3");

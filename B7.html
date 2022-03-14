@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="gaboga.css">
         <script src="./JJ.js"></script>
         <script type="text/javascript">
+            HapE();
             var kdC = 0;
             var kdS = 0;
 
@@ -35,27 +36,30 @@
     <body>
         <div id="D_fonts">
             <div class="story">
-                <img src="img/화주_전단지.png" alt="푸딩집 지도가 그려진 전단지이다. 뒷면에 지도가 있다." width=26%>
+                <img src="img/집.png" alt="익숙한 공간이다. 아마도 나의 집." width=26%>
                 <br><br>
                 <p class="box"><br>
-                    "선착순 100명 한정 특제 푸딩!"이라는 제목의 전단지이다.<br><br>
-                    전단지 뒷면에 푸딩집의 위치가 적혀있다.<br><br>
-                    전단지를 챙기면 버리기 전까지 다른 물건을 들 수 없을 것 같다.<br><br>
+                    익숙한 공간이다. 이 공간에 계속 있고 싶지 않다.<br><br>
+                    『 어서오세요, 용사님!<br><br>
+                    지구의 구원을 끝마칠까요? 』<br><br>
                 </p>
                 <button type="button" onClick="
-                if(M!=3){
-                    alert('더이상 물건을 들 수 없다.');
+                if(kill=='0'&&M=='3'){
+                    alert('『 당신은 아무것도 구원하지 못했어요. 』')
                 }
                 else{
                     HappyT();
-                    setCookie('pudding', '50', '2');
-                    location.href='B8.html'
+                    location.href='B9.html'
                 }
-                ">전단지를 챙긴다.</button><br>
+                ">이제 충분해. 지구는 구원받았어.</button><br>
 
                 <button type="button" onClick="
                 HappyT();
-                location.href='B8.html'">전단지를 챙기지 않는다.</button>
+                location.href='B8.html'">아직이야. 지구는 아직 구원받지 못했어.</button><br>
+
+                <button type="button" id="tnlt" onClick="
+                HappyT();
+                location.href='B5.html'">서랍이 있다.</button>
             </div>
         </div>
     </body>
